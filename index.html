@@ -10,8 +10,8 @@
         <li><a href="index.html"><img src="img/logo-technomart.svg" alt="логотип"></a></li>
         <li><img src="img/icon-search.svg" alt="поиск"><input type="search" placeholder="Поиск:" name="s">
         </li>
-        <li><img src="img/icon-bookmark.svg" alt="закладки">Закладки:0</li>
-        <li><img src="img/icon-cart.svg">Корзина:0</li>
+        <li><img src="img/icon-bookmark.svg" alt="закладки"><a href="#">Закладки:0</a></li>
+        <li><img src="img/icon-cart.svg"><a href="#">Корзина:0</a></li>
         <li><a href="#">Оформить заказ</a></li>
       </ul>
       <div>
@@ -40,7 +40,7 @@
       </div>
     </header>
     <main>
-      <h1>Техномарт:Товары</h1>
+      <h1 class="visually-hidden">Техномарт:Товары</h1>
       <section>
         <ul>
           <li>
@@ -250,8 +250,31 @@
         <p>Вы можете забрать товар сами,
            заехав в наш офис:
         </p>
-        <a href="#"><img src="img/map.png"  alt="адрес офиса"></a>
+        <a href="img/map-popup.png"><img src="img/map.png"  alt="адрес офиса ,улица Большая Конюшенная 19/8, Санкт-Петербург"></a>
+        <button type="button">
+          Закрыть
+        </button>
         <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="user-login">Ваш e-mail:</label>
+            <input id="user-login" type="email" name="login" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="text-email">Текст письма:</label>
+            <textarea name="text-email" id="text-email" rows="8" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">
+            отправить
+          </button>
+        </form>
+        <button type="button">
+          Закрыть
+        </button>
       </section>
     </main>
     <footer>
