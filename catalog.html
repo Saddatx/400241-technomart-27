@@ -49,7 +49,14 @@
       <h1>Перфораторы</h1>
       <section>
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
+        <form method="get" action="https://echo.htmlacademy.ru" oninput="priceput.value=price.value">
+          <fieldset>
+            <legend>Цена</legend>
+            0<input type="range" id="price" name="price" min="0" max="3000" step="5"> 3000
+            <div>
+              <output name="priceput"></output>
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Производители</legend>
             <ul>
@@ -96,9 +103,9 @@
       <section>
         <ul>
           <h3>Сортировка</h3>
-          <li>по цене</li>
-          <li>по типу</li>
-          <li>по функцианалу</li>
+          <li><a href="#">по цене</a></li>
+          <li><a href="">по типу</a></li>
+          <li><a href="">по функцианалу</a></li>
           <button><img src="img/icon-up-dir.svg" alt="стрелка вверх"></button>
           <button><img src="img/icon-down-dir.svg" alt="стрелка вниз"></button>
         </ul>
@@ -185,7 +192,7 @@
           </div>
           <div>
             <a href="#">Оформить заказ</a>
-            <button>Продолжить покупки</button>
+            <a href="#">Продолжить покупки</a>
           </div>
           <button>Закрыть</button>
         </div>
@@ -229,9 +236,9 @@
            Все права защищены
         </p>
         <ul>
-          <li><a href="#"><img src="img/icon-vk.svg" alt="иконка Вконтактек">Вконтакте</a></li>
-          <li><a href="#"><img src="img/icon-fb.svg" alt="иконка фейсбук">Фейсбук</a></li>
-          <li><a href="#"><img src="img/icon-insta.svg" alt="иконка инстаграм">Инстаграм</a></li>
+          <li><a href="#"><img src="img/icon-vk.svg" alt="Вконтактек"></a></li>
+          <li><a href="#"><img src="img/icon-fb.svg" alt="фейсбук"></a></li>
+          <li><a href="#"><img src="img/icon-insta.svg" alt="инстаграм"></a></li>
         </ul>
         <p>Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
